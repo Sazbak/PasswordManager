@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">PasswordManager</string>
-    <string name="edit_icon_content">Edit Icon</string>
-    <string name="search_icon_content">Search Icon</string>
-    <string name="info_icon_content">Ingo Icon</string>
+    <string name="search_icon_content">Keresés Ikon</string>
+    <string name="info_icon_content">Info Ikon</string>
+    <string name="master_pass_dialog_title">Add meg a mesterjelszót</string>
+    <string name="master_pass_dialog_show_btn">Mutasd</string>
+    <string name="master_pass_dialog_cancel_btn">Mégse</string>
 </resources>

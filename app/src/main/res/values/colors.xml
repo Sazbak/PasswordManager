@@ -11,4 +11,7 @@
     <color name="account_title">#00ADEF</color>
     <color name="email">#808080</color>
     <color name="divider">#F2F2F2</color>
+    <color name="master_pass_dialog_bg">#FFFFFF</color>
+    <color name="master_pass_dialog_title">#FFFFFF</color>
+    <color name="app_signature_color">#00ADEF</color>
 </resources>

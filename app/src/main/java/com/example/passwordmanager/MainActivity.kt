@@ -23,15 +23,12 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class MainActivity : ComponentActivity() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val viewModel by viewModels<MainViewModel>()
 
         setContent {
             PasswordManagerTheme {
-                // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
@@ -58,13 +55,4 @@ fun AccountList(viewModel: MainViewModel) {
     }
 }
 
-//@Preview(showBackground = true)
-//@Composable
-//fun DefaultPreview() {
-//
-//
-//
-//    PasswordManagerTheme {
-//        AccountList(accounts)
-//    }
-//}
+

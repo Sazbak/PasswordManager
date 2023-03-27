@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.sp
 import com.example.passwordmanager.R
 import com.example.passwordmanager.ui.theme.PasswordManagerTheme
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.Divider
 import androidx.compose.ui.Alignment
@@ -37,7 +38,9 @@ fun AccountElement(name: String, email: String) {
                 Image(
                     painter = painterResource(id = R.drawable.search),
                     contentDescription = stringResource(id = R.string.search_icon_content),
-                    modifier = Modifier.size(imageSize)
+                    modifier = Modifier.size(imageSize).clickable {
+
+                    }
                 )
                 Image(
                     painter = painterResource(id = R.drawable.info),
