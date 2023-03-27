@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">PasswordManager</string>
+    <string name="edit_icon_content">Edit Icon</string>
+    <string name="search_icon_content">Search Icon</string>
+    <string name="info_icon_content">Ingo Icon</string>
 </resources>
