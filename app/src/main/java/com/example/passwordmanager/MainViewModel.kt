@@ -1,15 +1,16 @@
 package com.example.passwordmanager
 
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.passwordmanager.model.Account
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
-    private val _accounts = MutableStateFlow<List<Account>>(emptyList())
-    val accounts: StateFlow<List<Account>> = _accounts
+    val accounts = mutableStateOf<List<Account>>(emptyList())
+    val dialogHandler =
+        mutableStateOf<@Composable () -> Unit>({})
 
     init {
         fetchAccounts()
@@ -18,7 +19,7 @@ class MainViewModel : ViewModel() {
     private fun fetchAccounts() {
         viewModelScope.launch {
             val response = APIClient.service.getAccounts()
-            _accounts.value = response.accounts
+            accounts.value = response.accounts
         }
     }
 }

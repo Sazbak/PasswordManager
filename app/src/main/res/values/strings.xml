@@ -5,4 +5,7 @@
     <string name="master_pass_dialog_title">Add meg a mesterjelszót</string>
     <string name="master_pass_dialog_show_btn">Mutasd</string>
     <string name="master_pass_dialog_cancel_btn">Mégse</string>
+    <string name="account_pass_dialog_copy_btn">Másolás</string>
+    <string name="account_pass_dialog_cancel_btn">Bezárás</string>
+    <string name="account_pass_dialog_pass_label">A Facebook profilhoz tartozó jelszavad:</string>
 </resources>
