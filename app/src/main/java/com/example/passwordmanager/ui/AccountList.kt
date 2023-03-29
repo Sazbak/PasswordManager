@@ -20,18 +20,24 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.passwordmanager.Dialogs
 import com.example.passwordmanager.R
 import com.example.passwordmanager.model.Account
-import com.example.passwordmanager.ui.dialog.MasterPasswordDialog
 
 @Composable
 fun AccountList(
     accountListState: State<List<Account>>,
-    dialogHandler: MutableState<@Composable () -> Unit>
+    dialogHandler: MutableState<Dialogs>,
+    accountPasswordUpdater: (String) -> Unit
 ) {
     LazyColumn {
         items(accountListState.value) { account ->
-            AccountElement(account.name, account.email, dialogHandler)
+            AccountElement(
+                name = account.name,
+                email = account.email,
+                { accountPasswordUpdater(account.password) },
+                dialogHandler = dialogHandler
+            )
         }
     }
 }
@@ -40,7 +46,8 @@ fun AccountList(
 fun AccountElement(
     name: String,
     email: String,
-    dialogHandler: MutableState<@Composable () -> Unit>
+    accountPasswordUpdater: () -> Unit,
+    dialogHandler: MutableState<Dialogs>
 ) {
     val imageSize = 30.dp
 
@@ -79,7 +86,8 @@ fun AccountElement(
                     modifier = Modifier
                         .size(imageSize)
                         .clickable {
-                            dialogHandler.value = { MasterPasswordDialog(dialogHandler) }
+                            accountPasswordUpdater()
+                            dialogHandler.value = Dialogs.MASTERPASSWORD
                         }
                 )
                 Image(

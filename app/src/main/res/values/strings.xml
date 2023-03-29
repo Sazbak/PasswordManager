@@ -8,4 +8,8 @@
     <string name="account_pass_dialog_copy_btn">Másolás</string>
     <string name="account_pass_dialog_cancel_btn">Bezárás</string>
     <string name="account_pass_dialog_pass_label">A Facebook profilhoz tartozó jelszavad:</string>
+    <string name="wrong_pass_dialog_again_btn">Újra</string>
+    <string name="wrong_pass_dialog_cancel_btn">Mégse</string>
+    <string name="wrong_pass_dialog_title">Hibás mesterjelszó!</string>
+    <string name="copied_pass_dialog_text">Másolva</string>
 </resources>

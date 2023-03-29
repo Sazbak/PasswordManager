@@ -22,12 +22,13 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     val viewModel by viewModels<MainViewModel>()
-                    Box(Modifier.fillMaxSize()) {
+                    Box {
                         AccountList(
                             viewModel.accounts,
-                            viewModel.dialogHandler
+                            viewModel.dialogState,
+                            viewModel::updateActiveAccountPassword
                         )
-                        viewModel.dialogHandler.value()
+                        viewModel.showDialog().invoke()
                     }
                 }
             }
