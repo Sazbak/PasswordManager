@@ -21,9 +21,15 @@ enum class Dialogs {
     NODIALOG
 }
 
+enum class AccountOrders {
+    ATOZ,
+    ZOTA
+}
+
 class MainViewModel : ViewModel() {
     private lateinit var _masterPassword: String
     private var _accountPassword = ""
+    private var accountsOrder = AccountOrders.ATOZ
     val accounts = mutableStateOf<List<Account>>(emptyList())
     val dialogState =
         mutableStateOf(Dialogs.NODIALOG)
@@ -35,7 +41,7 @@ class MainViewModel : ViewModel() {
     private fun fetchAccounts() {
         viewModelScope.launch {
             val response = APIClient.service.getAccounts()
-            accounts.value = response.accounts
+            accounts.value = response.accounts.sortedBy { it.name }
             _masterPassword = response.masterPassword
         }
     }
@@ -74,6 +80,16 @@ class MainViewModel : ViewModel() {
             Dialogs.NODIALOG -> {
                 { }
             }
+        }
+    }
+
+    fun switchOrder() {
+        accounts.value = if (accountsOrder == AccountOrders.ZOTA) {
+            accountsOrder = AccountOrders.ATOZ
+            accounts.value.sortedBy { it.name }
+        } else {
+            accountsOrder = AccountOrders.ZOTA
+            accounts.value.sortedByDescending { it.name }
         }
     }
 }

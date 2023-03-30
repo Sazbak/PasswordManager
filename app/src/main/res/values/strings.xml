@@ -20,4 +20,6 @@
     <string name="website_url_label">Weboldal url</string>
     <string name="details_save_btn">Mentés</string>
     <string name="show_password_icon">Show password icon</string>
+    <string name="main_page_title">Jelszavaid listája</string>
+    <string name="swap_order">Swap order of accounts</string>
 </resources>

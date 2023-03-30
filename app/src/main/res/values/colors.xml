@@ -26,4 +26,5 @@
     <color name="settings_save_text">#FFFFFF</color>
     <color name="settings_save_bg">#FFFFFF</color>
     <color name="settings_title">#FFFFFF</color>
+    <color name="main_page_title">#FFFFFF</color>
 </resources>
