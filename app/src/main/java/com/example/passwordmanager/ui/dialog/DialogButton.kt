@@ -23,7 +23,7 @@ fun DialogButton(text: String, onClick: () -> Unit) {
         ),
         border = BorderStroke(
             1.dp,
-            colorResource(id = R.color.master_pass_dialog_button_outline_bg)
+            colorResource(id = R.color.button_outline)
         ),
         shape = RoundedCornerShape(16.5.dp)
     ) {

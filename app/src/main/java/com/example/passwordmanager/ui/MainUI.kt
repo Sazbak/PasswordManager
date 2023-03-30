@@ -1,5 +1,6 @@
 package com.example.passwordmanager.ui
 
+import android.content.Intent
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -12,6 +13,7 @@ import androidx.compose.runtime.MutableState
 import androidx.compose.runtime.State
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -20,6 +22,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
+import com.example.passwordmanager.AccountSettingsActivity
 import com.example.passwordmanager.Dialogs
 import com.example.passwordmanager.R
 import com.example.passwordmanager.model.Account
@@ -35,7 +38,9 @@ fun AccountList(
             AccountElement(
                 name = account.name,
                 email = account.email,
-                { accountPasswordUpdater(account.password) },
+                accountPassword = account.password,
+                url = account.url,
+                accountPasswordUpdater = { accountPasswordUpdater(account.password) },
                 dialogHandler = dialogHandler
             )
         }
@@ -46,10 +51,13 @@ fun AccountList(
 fun AccountElement(
     name: String,
     email: String,
+    accountPassword: String,
+    url: String,
     accountPasswordUpdater: () -> Unit,
     dialogHandler: MutableState<Dialogs>
 ) {
     val imageSize = 30.dp
+    val context = LocalContext.current
 
     Column {
         Row(
@@ -96,6 +104,12 @@ fun AccountElement(
                     modifier = Modifier
                         .size(imageSize)
                         .clickable {
+                            val intent = Intent(context, AccountSettingsActivity::class.java)
+                            intent.putExtra("name", name)
+                            intent.putExtra("email", email)
+                            intent.putExtra("password", accountPassword)
+                            intent.putExtra("url", url)
+                            context.startActivity(intent)
                         }
                 )
             }

@@ -4,7 +4,7 @@
     <string name="info_icon_content">Info Ikon</string>
     <string name="master_pass_dialog_title">Add meg a mesterjelszót</string>
     <string name="master_pass_dialog_show_btn">Mutasd</string>
-    <string name="master_pass_dialog_cancel_btn">Mégse</string>
+    <string name="dismiss">Mégse</string>
     <string name="account_pass_dialog_copy_btn">Másolás</string>
     <string name="account_pass_dialog_cancel_btn">Bezárás</string>
     <string name="account_pass_dialog_pass_label">A Facebook profilhoz tartozó jelszavad:</string>
@@ -12,4 +12,12 @@
     <string name="wrong_pass_dialog_cancel_btn">Mégse</string>
     <string name="wrong_pass_dialog_title">Hibás mesterjelszó!</string>
     <string name="copied_pass_dialog_text">Másolva</string>
+    <string name="settings_bg_content">Background decoration</string>
+    <string name="settings_title">Fiók részleteinek szerkesztése</string>
+    <string name="account_name_label">Fiók neve:</string>
+    <string name="account_email_label">Fiókhoz tartozó email:</string>
+    <string name="account_pass_label">Fiókhoz tartozó jelszó</string>
+    <string name="website_url_label">Weboldal url</string>
+    <string name="details_save_btn">Mentés</string>
+    <string name="show_password_icon">Show password icon</string>
 </resources>

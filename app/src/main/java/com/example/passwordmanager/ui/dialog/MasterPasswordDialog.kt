@@ -40,7 +40,7 @@ fun MasterPasswordDialog(
 
         },
         buttonLeftText = stringResource(id = R.string.master_pass_dialog_show_btn),
-        buttonRightText = stringResource(id = R.string.master_pass_dialog_cancel_btn),
+        buttonRightText = stringResource(id = R.string.dismiss),
         dialogHandler = dialogHandler
     ) {
         Text(

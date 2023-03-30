@@ -16,8 +16,14 @@
     <color name="master_pass_dialog_title">#FFFFFF</color>
     <color name="master_pass_dialog_text_bottom">#FFFFFF</color>
     <color name="master_pass_dialog_button_bg">#FFFFFF</color>
-    <color name="master_pass_dialog_button_outline_bg">#2491D6</color>
+    <color name="button_outline">#2491D6</color>
     <color name="account_pass_dialog_title">#FFFFFF</color>
     <color name="account_pass_dialog_pass">#FFFFFF</color>
-
+    <color name="settings_bottom_bg">#F2F2F2</color>
+    <color name="settings_label_text">#D8D8D8</color>
+    <color name="settings_value_text">#FFFFFF</color>
+    <color name="settings_save_border">#FFFFFF</color>
+    <color name="settings_save_text">#FFFFFF</color>
+    <color name="settings_save_bg">#FFFFFF</color>
+    <color name="settings_title">#FFFFFF</color>
 </resources>
