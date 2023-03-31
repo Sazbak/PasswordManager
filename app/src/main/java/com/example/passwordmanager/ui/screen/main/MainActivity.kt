@@ -1,4 +1,4 @@
-package com.example.passwordmanager
+package com.example.passwordmanager.ui.screen.main
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -21,7 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.passwordmanager.ui.AccountList
+import com.example.passwordmanager.R
 import com.example.passwordmanager.ui.theme.PasswordManagerTheme
 
 class MainActivity : ComponentActivity() {

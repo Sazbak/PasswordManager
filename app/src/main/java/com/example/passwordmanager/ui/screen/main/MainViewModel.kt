@@ -1,4 +1,4 @@
-package com.example.passwordmanager
+package com.example.passwordmanager.ui.screen.main
 
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.mutableStateOf
@@ -7,6 +7,7 @@ import androidx.compose.ui.text.AnnotatedString
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.passwordmanager.model.Account
+import com.example.passwordmanager.network.APIClient
 import com.example.passwordmanager.ui.dialog.AccountPasswordDialog
 import com.example.passwordmanager.ui.dialog.MasterPasswordDialog
 import com.example.passwordmanager.ui.dialog.PasswordCopiedDialog

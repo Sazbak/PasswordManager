@@ -1,7 +1,6 @@
-package com.example.passwordmanager
+package com.example.passwordmanager.network
 
 import com.example.passwordmanager.model.AccountsResponse
-import retrofit2.Call
 import retrofit2.http.GET
 
 interface APIInterface {

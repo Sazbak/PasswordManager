@@ -1,4 +1,4 @@
-package com.example.passwordmanager
+package com.example.passwordmanager.ui.screen.accountsettings
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -19,9 +19,7 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.passwordmanager.ui.PasswordField
-import com.example.passwordmanager.ui.SettingsLabelText
-import com.example.passwordmanager.ui.SettingsTextField
+import com.example.passwordmanager.R
 import com.example.passwordmanager.ui.theme.PasswordManagerTheme
 
 class AccountSettingsActivity : ComponentActivity() {

@@ -1,4 +1,4 @@
-package com.example.passwordmanager.ui
+package com.example.passwordmanager.ui.screen.main
 
 import android.content.Intent
 import androidx.compose.foundation.Image
@@ -22,10 +22,9 @@ import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.passwordmanager.AccountSettingsActivity
-import com.example.passwordmanager.Dialogs
 import com.example.passwordmanager.R
 import com.example.passwordmanager.model.Account
+import com.example.passwordmanager.ui.screen.accountsettings.AccountSettingsActivity
 
 @Composable
 fun AccountList(

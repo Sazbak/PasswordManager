@@ -10,8 +10,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.Dialog
-import com.example.passwordmanager.Dialogs
 import com.example.passwordmanager.R
+import com.example.passwordmanager.ui.screen.main.Dialogs
 
 @Composable
 fun GeneralDialog(

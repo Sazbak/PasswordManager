@@ -1,4 +1,4 @@
-package com.example.passwordmanager
+package com.example.passwordmanager.network
 
 import okhttp3.OkHttpClient
 import retrofit2.Retrofit

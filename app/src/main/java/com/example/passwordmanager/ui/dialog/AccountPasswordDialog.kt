@@ -15,8 +15,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.passwordmanager.Dialogs
 import com.example.passwordmanager.R
+import com.example.passwordmanager.ui.screen.main.Dialogs
 
 @Composable
 fun AccountPasswordDialog(
