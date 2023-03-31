@@ -64,6 +64,8 @@ fun MasterPasswordDialog(
                 focusedIndicatorColor = colorResource(id = R.color.master_pass_dialog_text_bottom),
                 unfocusedIndicatorColor = colorResource(id = R.color.master_pass_dialog_text_bottom),
             ),
+            maxLines = 1,
+            singleLine = true,
             modifier = Modifier
                 .padding(start = 24.dp, end = 24.dp, bottom = 21.dp)
         )

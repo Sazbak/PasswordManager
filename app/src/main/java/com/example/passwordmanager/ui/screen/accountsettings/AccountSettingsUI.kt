@@ -55,6 +55,8 @@ fun SettingsTextField(text: String, hideText: Boolean = false) {
                 color = colorResource(id = R.color.settings_value_text),
                 background = Color.Transparent
             ),
+            maxLines = 1,
+            singleLine = true,
             visualTransformation = if (hideText) PasswordVisualTransformation() else VisualTransformation.None,
 
             modifier = Modifier
