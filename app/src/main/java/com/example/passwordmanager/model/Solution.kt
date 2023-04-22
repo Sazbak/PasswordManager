@@ -1,7 +1,7 @@
 package com.example.passwordmanager.model
 
 class Solution {
-    fun intToRoman(num: Int): String {
+    fun intoRoman(num: Int): String {
         val romanIntValueOrder = listOf(1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1)
         var result = ""
         var input = num
@@ -32,4 +32,6 @@ class Solution {
         1 -> "I"
         else -> ""
     }
+
+    //test change
 }
